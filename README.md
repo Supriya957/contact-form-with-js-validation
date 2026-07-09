@@ -48,12 +48,12 @@ The application validates the **Name**, **Email**, and **Message** fields, displ
 ## 📁 Project Structure
 
 ```text
-professional-contact-form-validation/
+ContactForm/
 │
 ├── index.html
 ├── style.css
 ├── script.js
-└── README.md
+README.md
 ```
 
 ---
