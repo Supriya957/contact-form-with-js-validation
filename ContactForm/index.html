@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Professional Contact Form</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <main class="contact-page">
+
+        <section class="contact-card">
+
+            <!-- ===========================
+                 LEFT SIDE
+            ============================ -->
+
+            <div class="contact-info">
+
+                <div class="brand">
+
+                    <div class="brand-icon">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                    </div>
+
+                    <h1>Let's Talk</h1>
+
+                    <p>
+
+                        We'd love to hear from you.
+
+                        Whether you have a question,
+
+                        feedback, or a new project,
+
+                        our team is ready to help.
+
+                    </p>
+
+                </div>
+
+                <div class="info-list">
+
+                    <div class="info-item">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+
+                            <h3>Address</h3>
+
+                            <p>Hyderabad, Telangana, India</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <div>
+
+                            <h3>Phone</h3>
+
+                            <p>+91 98xxx xxx10</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div>
+
+                            <h3>Email</h3>
+
+                            <p>support@example.com</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <div>
+
+                            <h3>Working Hours</h3>
+
+                            <p>Mon - Fri : 9 AM - 6 PM</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="social-icons">
+
+                    <a href="#">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-x-twitter"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- ===========================
+                 RIGHT SIDE
+            ============================ -->
+
+            <div class="contact-form">
+
+                <span class="tag">
+
+                    CONTACT FORM
+
+                </span>
+
+                <h2>
+
+                    Send us a Message
+
+                </h2>
+
+                <p class="subtitle">
+
+                    Fill in the details below and
+
+                    we'll get back to you within
+
+                    24 hours.
+
+                </p>
+
+                <form id="contactForm"
+                      novalidate>
+
+                    <div class="row">
+
+                        <div class="input-box">
+
+                            <label for="name">
+
+                                Full Name
+
+                            </label>
+
+                            <input type="text"
+                                   id="name"
+                                   placeholder="John Doe">
+
+                            <small id="nameError"></small>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label for="email">
+
+                                Email Address
+
+                            </label>
+
+                            <input type="email"
+                                   id="email"
+                                   placeholder="john@example.com">
+
+                            <small id="emailError"></small>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <div class="input-box">
+
+                        <label for="message">
+
+                            Message
+
+                        </label>
+
+                        <textarea id="message"
+                                  rows="6"
+                                  maxlength="500"
+                                  placeholder="Write your message here..."></textarea>
+
+                        <div class="message-footer">
+
+                            <small id="messageError"></small>
+
+                            <span>
+
+                                <span id="charCount">
+
+                                    0
+
+                                </span>
+
+                                /500
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="buttons">
+
+                        <button type="submit"
+                                class="btn primary-btn">
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                            Send Message
+
+                        </button>
+
+                        <button type="reset"
+                                class="btn secondary-btn">
+
+                            <i class="fa-solid fa-rotate-right"></i>
+
+                            Reset
+
+                        </button>
+
+                    </div>
+
+                    <div id="successMessage">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Your message has been sent successfully.
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
